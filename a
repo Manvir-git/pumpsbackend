@@ -1,0 +1,80 @@
+// mongodb+srv://Manviradmin:manirocks@cluster0.2pmww2t.mongodb.net/project
+
+
+// app.use('/api/enqueries', enqueriesRoutes);
+
+// require('dotenv').config();
+// const express = require('express');
+// const mongoose = require('mongoose');
+// const cors = require('cors');
+// const jwt = require('jsonwebtoken');
+// const bcrypt = require('bcryptjs');
+// const path = require('path');
+// const bodyParser = require('body-parser');
+
+// // Import routes
+// const pumpRoutes = require('./routes/pumpRoute'); // Residential pumps routes
+// const agpumpsRoutes = require('./routes/agpumpsRoute'); // Agricultural pumps routes
+// const uploadRoute = require('./routes/UploadRoute1'); // Route for image uploads
+// const enqueriesRoutes = require('./routes/Enqueries'); // Route for enquiries
+
+// // Initialize Express app
+// const app = express();
+
+// // Middleware
+// app.use(cors({
+//   origin: ['http://localhost:3000', 'http://localhost:3001'], // Allow requests from these origins
+//   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed methods
+//   allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
+// }));
+// app.use(express.json()); // Parse JSON request bodies
+// app.use(bodyParser.json());
+// app.use('/uploads', express.static(path.join(__dirname, 'uploads'))); // Serve static files from uploads
+
+// // JWT Secret Key
+// const JWT_SECRET = process.env.JWT_SECRET || 'your_jwt_secret_key';
+
+// // Mock Admin Credentials (In a real app, use a database)
+// const adminCredentials = {
+//   username: 'admin',
+//   passwordHash: bcrypt.hashSync('admin123', 10), // bcrypt-hashed password
+// };
+
+// // Middleware to verify JWT tokens
+// function authenticateJWT(req, res, next) {
+//   const token = req.headers.authorization?.split(' ')[1];
+
+//   if (!token) {
+//     return res.status(403).json({ message: 'Access denied: No token provided.' });
+//   }
+
+//   jwt.verify(token, JWT_SECRET, (err, user) => {
+//     if (err) {
+//       return res.status(403).json({ message: 'Access denied: Invalid token.' });
+//     }
+
+//     req.user = user; // Attach user info to the request
+//     next();
+//   });
+// }
+
+
+
+// // Other Routes
+// app.use('/api/pumps', pumpRoutes);       // Residential pumps
+// app.use('/api/agpumps', agpumpsRoutes); // Agricultural pumps
+// app.use('/api/uploads', uploadRoute);   // Image uploads
+// app.use('/api/enqueries', enqueriesRoutes); // Enquiries
+
+// // Connect to MongoDB (Replace with your actual MongoDB connection string)
+// mongoose.connect('mongodb+srv://Manviradmin:manirocks@cluster0.2pmww2t.mongodb.net/project', { useNewUrlParser: true, useUnifiedTopology: true })
+//   .then(() => console.log('MongoDB connected'))
+//   .catch((err) => console.log('MongoDB connection error: ', err));
+
+// // Start the Server
+// const PORT = process.env.PORT || 5001;
+// app.listen(PORT, () => {
+//   console.log(`Server is running on http://localhost:${PORT}`);
+// });
+
+
