@@ -58,11 +58,11 @@ const SECRET_KEY = process.env.SECRET_KEY || 'fallback_secret_key_change_in_prod
 // Middleware
 // CORS middleware with more robust configuration
 app.use(cors({
-  origin: process.env.ALLOWED_ORIGINS ? process.env.ALLOWED_ORIGINS.split(',') : ['http://localhost:3000', 'http://localhost:3001'],
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
-  credentials: true
-}));
+  origin: '*', // This allows all origins
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow all common HTTP methods
+  allowedHeaders: ['Content-Type', 'Authorization'], // Allow headers
+  credentials: true // If you need to support cookies or authentication headers
+}))
 
 // Body parsing middleware
 app.use(express.json());
