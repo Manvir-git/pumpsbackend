@@ -1,0 +1,1170 @@
+[
+  {
+    "categorySlug": "7.5-hp",
+    "name": "BS V3 Submersible Pump 7.5 HP",
+    "brand": "BS Pumps",
+    "price": "",
+    "description": "High-efficiency 7.5 HP borewell submersible pump suitable for deep borewells up to 200 ft.",
+    "specs": { "hp": 7.5, "stages": 9, "depth_ft": 200, "head_m": 65, "discharge_lph": 3600, "phases": "3 Phase", "outlet_mm": 65 },
+    "features": ["CRCA stainless steel impeller", "Built-in thermal overload protection", "Sand-resistant design", "ISI marked motor", "Suitable for borewell 4.5\" and above"],
+    "variants": [
+      { "label": "7 Stage – 150 ft", "price": "18500", "inStock": true },
+      { "label": "9 Stage – 200 ft", "price": "21500", "inStock": true },
+      { "label": "11 Stage – 250 ft", "price": "24500", "inStock": true }
+    ],
+    "sortOrder": 1
+  },
+  {
+    "categorySlug": "7.5-hp",
+    "name": "Crompton Aquagold 7.5 HP Submersible",
+    "brand": "Crompton",
+    "price": "",
+    "description": "Crompton Aquagold series with rust-resistant body and high head capacity for agricultural use.",
+    "specs": { "hp": 7.5, "stages": 9, "depth_ft": 200, "head_m": 60, "discharge_lph": 3500, "phases": "3 Phase", "outlet_mm": 65 },
+    "features": ["Rust-proof SS shaft", "Wide voltage range 180–240V", "5-year motor warranty", "Anti-corrosion motor winding"],
+    "variants": [
+      { "label": "9 Stage", "price": "22000", "inStock": true },
+      { "label": "11 Stage", "price": "25500", "inStock": true }
+    ],
+    "sortOrder": 2
+  },
+  {
+    "categorySlug": "7.5-hp",
+    "name": "Kirloskar Star 7.5 HP Borewell Pump",
+    "brand": "Kirloskar",
+    "price": "",
+    "description": "Kirloskar Star series 7.5 HP submersible pump with high discharge for irrigation.",
+    "specs": { "hp": 7.5, "stages": 8, "depth_ft": 180, "head_m": 58, "discharge_lph": 4000, "phases": "3 Phase", "outlet_mm": 65 },
+    "features": ["SS 304 impeller", "Double ball bearing", "IP68 waterproof rating", "Sand & debris resistant"],
+    "variants": [
+      { "label": "8 Stage – 180 ft", "price": "23500", "inStock": true },
+      { "label": "10 Stage – 230 ft", "price": "27000", "inStock": true }
+    ],
+    "sortOrder": 3
+  },
+  {
+    "categorySlug": "7.5-hp",
+    "name": "CRI 7.5 HP Submersible Pump",
+    "brand": "CRI",
+    "price": "",
+    "description": "CRI 4-inch submersible pump with high-efficiency motor for borewell irrigation.",
+    "specs": { "hp": 7.5, "stages": 9, "depth_ft": 200, "head_m": 62, "discharge_lph": 3800, "phases": "3 Phase", "outlet_mm": 65 },
+    "features": ["SS 304 food-grade materials", "Energy-efficient motor", "Thermal protector", "5-year warranty"],
+    "variants": [
+      { "label": "9 Stage", "price": "24000", "inStock": true },
+      { "label": "11 Stage", "price": "27500", "inStock": false }
+    ],
+    "sortOrder": 4
+  },
+
+  {
+    "categorySlug": "10-hp",
+    "name": "BS V3 Submersible Pump 10 HP",
+    "brand": "BS Pumps",
+    "price": "",
+    "description": "10 HP 3-phase borewell submersible pump for high-discharge agricultural irrigation.",
+    "specs": { "hp": 10, "stages": 12, "depth_ft": 250, "head_m": 85, "discharge_lph": 4500, "phases": "3 Phase", "outlet_mm": 65 },
+    "features": ["High-efficiency motor", "CRCA SS impeller", "Sand-resistant", "Thermal overload protection"],
+    "variants": [
+      { "label": "10 Stage – 220 ft", "price": "28000", "inStock": true },
+      { "label": "12 Stage – 250 ft", "price": "32000", "inStock": true },
+      { "label": "14 Stage – 300 ft", "price": "36000", "inStock": true }
+    ],
+    "sortOrder": 1
+  },
+  {
+    "categorySlug": "10-hp",
+    "name": "Crompton Aquagold 10 HP Submersible",
+    "brand": "Crompton",
+    "price": "",
+    "description": "Heavy-duty 10 HP submersible for deep borewells up to 300 ft.",
+    "specs": { "hp": 10, "stages": 12, "depth_ft": 300, "head_m": 90, "discharge_lph": 4800, "phases": "3 Phase", "outlet_mm": 65 },
+    "features": ["Wide voltage range", "SS shaft", "Anti-rust body", "5-year motor warranty"],
+    "variants": [
+      { "label": "12 Stage", "price": "33000", "inStock": true },
+      { "label": "14 Stage", "price": "37500", "inStock": true }
+    ],
+    "sortOrder": 2
+  },
+  {
+    "categorySlug": "10-hp",
+    "name": "Kirloskar Star 10 HP Borewell Pump",
+    "brand": "Kirloskar",
+    "price": "",
+    "description": "Kirloskar 10 HP submersible with high head for deep irrigation borewells.",
+    "specs": { "hp": 10, "stages": 11, "depth_ft": 280, "head_m": 88, "discharge_lph": 5000, "phases": "3 Phase", "outlet_mm": 80 },
+    "features": ["SS 304 impeller", "IP68 rated", "Double ball bearing", "Corrosion-resistant"],
+    "variants": [
+      { "label": "11 Stage – 280 ft", "price": "35000", "inStock": true },
+      { "label": "13 Stage – 330 ft", "price": "40000", "inStock": false }
+    ],
+    "sortOrder": 3
+  },
+  {
+    "categorySlug": "10-hp",
+    "name": "Texmo 10 HP Submersible Pump",
+    "brand": "Texmo",
+    "price": "31000",
+    "description": "Texmo 10 HP reliable borewell pump for medium to deep irrigation wells.",
+    "specs": { "hp": 10, "stages": 10, "depth_ft": 250, "head_m": 80, "discharge_lph": 4600, "phases": "3 Phase", "outlet_mm": 65 },
+    "features": ["ISI marked", "Auto thermal cutout", "Low maintenance", "Energy efficient"],
+    "variants": [],
+    "sortOrder": 4
+  },
+
+  {
+    "categorySlug": "12-hp",
+    "name": "BS V3 Submersible Pump 12 HP",
+    "brand": "BS Pumps",
+    "price": "",
+    "description": "12 HP heavy-duty borewell submersible for large irrigation fields.",
+    "specs": { "hp": 12, "stages": 14, "depth_ft": 300, "head_m": 100, "discharge_lph": 5500, "phases": "3 Phase", "outlet_mm": 80 },
+    "features": ["CRCA SS impeller", "High discharge", "Sand resistant", "Built-in overload protection"],
+    "variants": [
+      { "label": "12 Stage – 280 ft", "price": "38000", "inStock": true },
+      { "label": "14 Stage – 320 ft", "price": "44000", "inStock": true }
+    ],
+    "sortOrder": 1
+  },
+  {
+    "categorySlug": "12-hp",
+    "name": "Crompton 12 HP Submersible",
+    "brand": "Crompton",
+    "price": "",
+    "description": "Crompton 12 HP submersible pump for deep borewells and high-head requirements.",
+    "specs": { "hp": 12, "stages": 14, "depth_ft": 320, "head_m": 105, "discharge_lph": 5800, "phases": "3 Phase", "outlet_mm": 80 },
+    "features": ["SS shaft", "Wide voltage", "Anti-corrosion winding", "5-year warranty"],
+    "variants": [
+      { "label": "14 Stage", "price": "45000", "inStock": true },
+      { "label": "16 Stage", "price": "51000", "inStock": true }
+    ],
+    "sortOrder": 2
+  },
+  {
+    "categorySlug": "12-hp",
+    "name": "CRI 12 HP Borewell Pump",
+    "brand": "CRI",
+    "price": "42000",
+    "description": "CRI 12 HP submersible pump with energy-efficient motor for deep-well irrigation.",
+    "specs": { "hp": 12, "stages": 13, "depth_ft": 300, "head_m": 98, "discharge_lph": 5400, "phases": "3 Phase", "outlet_mm": 80 },
+    "features": ["SS 304 food-grade", "Energy efficient", "Thermal protector", "Low maintenance"],
+    "variants": [],
+    "sortOrder": 3
+  },
+
+  {
+    "categorySlug": "15-hp",
+    "name": "BS V3 Submersible Pump 15 HP",
+    "brand": "BS Pumps",
+    "price": "",
+    "description": "15 HP high-capacity submersible pump for large agricultural borewells.",
+    "specs": { "hp": 15, "stages": 16, "depth_ft": 350, "head_m": 120, "discharge_lph": 6500, "phases": "3 Phase", "outlet_mm": 80 },
+    "features": ["Heavy-duty SS impeller", "High discharge capacity", "Sand resistant", "Thermal protection"],
+    "variants": [
+      { "label": "14 Stage – 320 ft", "price": "52000", "inStock": true },
+      { "label": "16 Stage – 360 ft", "price": "60000", "inStock": true },
+      { "label": "18 Stage – 400 ft", "price": "68000", "inStock": false }
+    ],
+    "sortOrder": 1
+  },
+  {
+    "categorySlug": "15-hp",
+    "name": "Kirloskar 15 HP Submersible Pump",
+    "brand": "Kirloskar",
+    "price": "",
+    "description": "Kirloskar heavy-duty 15 HP pump for deep borewells and high-demand irrigation.",
+    "specs": { "hp": 15, "stages": 16, "depth_ft": 370, "head_m": 125, "discharge_lph": 7000, "phases": "3 Phase", "outlet_mm": 80 },
+    "features": ["IP68 waterproof", "SS 304 impeller", "Double ball bearing", "5-year warranty"],
+    "variants": [
+      { "label": "16 Stage", "price": "62000", "inStock": true },
+      { "label": "18 Stage", "price": "70000", "inStock": true }
+    ],
+    "sortOrder": 2
+  },
+  {
+    "categorySlug": "15-hp",
+    "name": "Crompton 15 HP Submersible",
+    "brand": "Crompton",
+    "price": "58000",
+    "description": "Crompton 15 HP submersible with wide voltage tolerance for rural power supply.",
+    "specs": { "hp": 15, "stages": 15, "depth_ft": 340, "head_m": 115, "discharge_lph": 6800, "phases": "3 Phase", "outlet_mm": 80 },
+    "features": ["Wide voltage 160–260V", "Anti-rust body", "Auto restart", "ISI marked"],
+    "variants": [],
+    "sortOrder": 3
+  },
+
+  {
+    "categorySlug": "20-hp",
+    "name": "BS V3 Submersible Pump 20 HP",
+    "brand": "BS Pumps",
+    "price": "",
+    "description": "20 HP industrial-grade submersible for very deep borewells and canal lift irrigation.",
+    "specs": { "hp": 20, "stages": 20, "depth_ft": 450, "head_m": 160, "discharge_lph": 9000, "phases": "3 Phase", "outlet_mm": 100 },
+    "features": ["SS 304 impeller", "Industrial motor", "Sand & debris resistant", "Built-in thermal protection"],
+    "variants": [
+      { "label": "18 Stage – 400 ft", "price": "80000", "inStock": true },
+      { "label": "20 Stage – 450 ft", "price": "92000", "inStock": true }
+    ],
+    "sortOrder": 1
+  },
+  {
+    "categorySlug": "20-hp",
+    "name": "Kirloskar 20 HP Borewell Pump",
+    "brand": "Kirloskar",
+    "price": "",
+    "description": "Heavy-duty Kirloskar 20 HP for large farms, canal irrigation and industrial water supply.",
+    "specs": { "hp": 20, "stages": 20, "depth_ft": 500, "head_m": 170, "discharge_lph": 10000, "phases": "3 Phase", "outlet_mm": 100 },
+    "features": ["IP68 rated", "SS 304 impeller", "High head capacity", "Stainless steel body"],
+    "variants": [
+      { "label": "20 Stage – 450 ft", "price": "95000", "inStock": true },
+      { "label": "22 Stage – 500 ft", "price": "108000", "inStock": false }
+    ],
+    "sortOrder": 2
+  },
+  {
+    "categorySlug": "20-hp",
+    "name": "CRI 20 HP Submersible Pump",
+    "brand": "CRI",
+    "price": "88000",
+    "description": "CRI 20 HP high-efficiency pump for deep borewells and large-scale irrigation.",
+    "specs": { "hp": 20, "stages": 19, "depth_ft": 420, "head_m": 155, "discharge_lph": 9500, "phases": "3 Phase", "outlet_mm": 100 },
+    "features": ["Energy-efficient motor", "SS food-grade materials", "Thermal cutout", "Low maintenance"],
+    "variants": [],
+    "sortOrder": 3
+  },
+
+  {
+    "categorySlug": "1-hp",
+    "name": "BS Domestic Submersible Pump 1 HP",
+    "brand": "BS Pumps",
+    "price": "7500",
+    "description": "Ideal for household overhead tanks and domestic water supply from shallow borewells.",
+    "specs": { "hp": 1, "stages": 5, "depth_ft": 80, "head_m": 30, "discharge_lph": 1800, "phases": "Single Phase", "outlet_mm": 32 },
+    "features": ["Single phase – runs on household power", "Compact lightweight design", "Built-in overload protector", "No priming required"],
+    "variants": [],
+    "sortOrder": 1
+  },
+  {
+    "categorySlug": "1-hp",
+    "name": "Crompton Mini Master 1 HP",
+    "brand": "Crompton",
+    "price": "8200",
+    "description": "Crompton Mini Master compact 1 HP submersible for domestic borewell use.",
+    "specs": { "hp": 1, "stages": 5, "depth_ft": 100, "head_m": 32, "discharge_lph": 2000, "phases": "Single Phase", "outlet_mm": 32 },
+    "features": ["Compact 4-inch borewell compatible", "Auto thermal cutout", "ISI marked", "2-year warranty"],
+    "variants": [],
+    "sortOrder": 2
+  },
+  {
+    "categorySlug": "1-hp",
+    "name": "V-Guard 1 HP Submersible Pump",
+    "brand": "V-Guard",
+    "price": "7800",
+    "description": "V-Guard 1 HP reliable single-phase domestic submersible pump.",
+    "specs": { "hp": 1, "stages": 5, "depth_ft": 80, "head_m": 28, "discharge_lph": 1900, "phases": "Single Phase", "outlet_mm": 32 },
+    "features": ["Voltage fluctuation resistant", "Corrosion-proof body", "Low noise", "Easy installation"],
+    "variants": [],
+    "sortOrder": 3
+  },
+  {
+    "categorySlug": "1-hp",
+    "name": "Texmo 1 HP Domestic Pump",
+    "brand": "Texmo",
+    "price": "7200",
+    "description": "Texmo 1 HP domestic pump for overhead tank filling and household water supply.",
+    "specs": { "hp": 1, "stages": 4, "depth_ft": 70, "head_m": 25, "discharge_lph": 1700, "phases": "Single Phase", "outlet_mm": 25 },
+    "features": ["ISI marked", "Thermal overload protection", "Lightweight", "Low maintenance"],
+    "variants": [],
+    "sortOrder": 4
+  },
+
+  {
+    "categorySlug": "1.5-hp",
+    "name": "Aroma Domestic Pump 1.5 HP",
+    "brand": "Aroma",
+    "price": "9500",
+    "description": "1.5 HP single-phase pump for domestic and small agricultural use.",
+    "specs": { "hp": 1.5, "stages": 7, "depth_ft": 120, "head_m": 42, "discharge_lph": 2400, "phases": "Single Phase", "outlet_mm": 40 },
+    "features": ["Energy efficient motor", "Corrosion resistant body", "Low maintenance"],
+    "variants": [],
+    "sortOrder": 1
+  },
+  {
+    "categorySlug": "1.5-hp",
+    "name": "Crompton 1.5 HP Submersible",
+    "brand": "Crompton",
+    "price": "10500",
+    "description": "Crompton 1.5 HP single-phase submersible for domestic borewells up to 120 ft.",
+    "specs": { "hp": 1.5, "stages": 7, "depth_ft": 120, "head_m": 44, "discharge_lph": 2600, "phases": "Single Phase", "outlet_mm": 40 },
+    "features": ["Wide voltage 150–270V", "Thermal overload protection", "ISI marked", "2-year warranty"],
+    "variants": [],
+    "sortOrder": 2
+  },
+  {
+    "categorySlug": "1.5-hp",
+    "name": "Kirloskar 1.5 HP Domestic Pump",
+    "brand": "Kirloskar",
+    "price": "11000",
+    "description": "Kirloskar 1.5 HP pump for household water supply from medium-depth borewells.",
+    "specs": { "hp": 1.5, "stages": 6, "depth_ft": 110, "head_m": 40, "discharge_lph": 2500, "phases": "Single Phase", "outlet_mm": 40 },
+    "features": ["SS impeller", "Auto thermal cutout", "Rust-proof design", "ISI certified"],
+    "variants": [],
+    "sortOrder": 3
+  },
+
+  {
+    "categorySlug": "2-hp",
+    "name": "BS 2 HP Domestic Submersible Pump",
+    "brand": "BS Pumps",
+    "price": "13500",
+    "description": "2 HP single-phase submersible pump for larger homes and small farmhouses.",
+    "specs": { "hp": 2, "stages": 8, "depth_ft": 150, "head_m": 55, "discharge_lph": 3000, "phases": "Single Phase", "outlet_mm": 40 },
+    "features": ["High head capacity", "Thermal protection", "Sand resistant", "ISI marked"],
+    "variants": [],
+    "sortOrder": 1
+  },
+  {
+    "categorySlug": "2-hp",
+    "name": "Crompton 2 HP Submersible",
+    "brand": "Crompton",
+    "price": "14800",
+    "description": "Crompton 2 HP pump for deep domestic borewells with consistent water supply.",
+    "specs": { "hp": 2, "stages": 9, "depth_ft": 160, "head_m": 58, "discharge_lph": 3200, "phases": "Single Phase", "outlet_mm": 40 },
+    "features": ["Wide voltage range", "Corrosion-resistant body", "Thermal cutout", "2-year warranty"],
+    "variants": [],
+    "sortOrder": 2
+  },
+  {
+    "categorySlug": "2-hp",
+    "name": "V-Guard 2 HP Submersible",
+    "brand": "V-Guard",
+    "price": "13000",
+    "description": "V-Guard 2 HP domestic pump for reliable household water supply.",
+    "specs": { "hp": 2, "stages": 8, "depth_ft": 140, "head_m": 52, "discharge_lph": 2900, "phases": "Single Phase", "outlet_mm": 40 },
+    "features": ["Voltage-safe design", "Anti-corrosion", "Low noise operation", "ISI marked"],
+    "variants": [],
+    "sortOrder": 3
+  },
+
+  {
+    "categorySlug": "3-hp",
+    "name": "BS 3 HP Submersible Pump",
+    "brand": "BS Pumps",
+    "price": "",
+    "description": "3 HP submersible for farmhouses, hotels and commercial domestic water supply.",
+    "specs": { "hp": 3, "stages": 10, "depth_ft": 200, "head_m": 72, "discharge_lph": 3800, "phases": "Single Phase", "outlet_mm": 50 },
+    "features": ["High head performance", "Sand resistant", "Thermal overload protection", "ISI marked"],
+    "variants": [
+      { "label": "Single Phase", "price": "18500", "inStock": true },
+      { "label": "3 Phase", "price": "17000", "inStock": true }
+    ],
+    "sortOrder": 1
+  },
+  {
+    "categorySlug": "3-hp",
+    "name": "Crompton 3 HP Submersible",
+    "brand": "Crompton",
+    "price": "",
+    "description": "Crompton 3 HP submersible for commercial and deep domestic borewells.",
+    "specs": { "hp": 3, "stages": 10, "depth_ft": 200, "head_m": 75, "discharge_lph": 4000, "phases": "Single Phase", "outlet_mm": 50 },
+    "features": ["Wide voltage 150–270V", "Anti-corrosion body", "5-year motor warranty"],
+    "variants": [
+      { "label": "Single Phase", "price": "20000", "inStock": true },
+      { "label": "3 Phase", "price": "18500", "inStock": true }
+    ],
+    "sortOrder": 2
+  },
+  {
+    "categorySlug": "3-hp",
+    "name": "Kirloskar 3 HP Borewell Pump",
+    "brand": "Kirloskar",
+    "price": "19500",
+    "description": "Kirloskar 3 HP pump for deep domestic and light commercial borewell applications.",
+    "specs": { "hp": 3, "stages": 9, "depth_ft": 190, "head_m": 70, "discharge_lph": 3600, "phases": "Single Phase", "outlet_mm": 50 },
+    "features": ["SS 304 impeller", "Auto thermal cutout", "Rust-proof design", "ISI certified"],
+    "variants": [],
+    "sortOrder": 3
+  },
+
+  {
+    "categorySlug": "upvc-pipes",
+    "name": "Finolex UPVC Pipe 25mm",
+    "brand": "Finolex",
+    "price": "",
+    "description": "ISI marked UPVC pressure pipe for water supply and irrigation. Available in Class 1 to Class 5.",
+    "specs": { "diameter_mm": "25", "length_m": "6", "weight_kgm": 0.18, "standard": "IS 4985" },
+    "features": ["ISI certified", "UV stabilised for outdoor use", "Lead-free formulation", "Smooth bore for high flow"],
+    "variants": [
+      { "label": "Class 1 (0.25 MPa)", "price": "38", "inStock": true },
+      { "label": "Class 2 (0.40 MPa)", "price": "52", "inStock": true },
+      { "label": "Class 3 (0.60 MPa)", "price": "72", "inStock": true },
+      { "label": "Class 4 (0.80 MPa)", "price": "95", "inStock": true },
+      { "label": "Class 5 (1.00 MPa)", "price": "120", "inStock": false }
+    ],
+    "sortOrder": 1
+  },
+  {
+    "categorySlug": "upvc-pipes",
+    "name": "Finolex UPVC Pipe 32mm",
+    "brand": "Finolex",
+    "price": "",
+    "description": "32mm UPVC pipe ISI marked for water supply lines and irrigation.",
+    "specs": { "diameter_mm": "32", "length_m": "6", "weight_kgm": 0.28, "standard": "IS 4985" },
+    "features": ["ISI certified", "UV stabilised", "Lead-free", "Smooth bore"],
+    "variants": [
+      { "label": "Class 2 (0.40 MPa)", "price": "68", "inStock": true },
+      { "label": "Class 3 (0.60 MPa)", "price": "95", "inStock": true },
+      { "label": "Class 4 (0.80 MPa)", "price": "125", "inStock": true }
+    ],
+    "sortOrder": 2
+  },
+  {
+    "categorySlug": "upvc-pipes",
+    "name": "Finolex UPVC Pipe 40mm",
+    "brand": "Finolex",
+    "price": "",
+    "description": "40mm UPVC pressure pipe for main supply lines and submersible pump outlets.",
+    "specs": { "diameter_mm": "40", "length_m": "6", "weight_kgm": 0.42, "standard": "IS 4985" },
+    "features": ["ISI certified", "UV stabilised", "Chemical resistant", "High impact strength"],
+    "variants": [
+      { "label": "Class 2 (0.40 MPa)", "price": "105", "inStock": true },
+      { "label": "Class 3 (0.60 MPa)", "price": "145", "inStock": true },
+      { "label": "Class 4 (0.80 MPa)", "price": "188", "inStock": true }
+    ],
+    "sortOrder": 3
+  },
+  {
+    "categorySlug": "upvc-pipes",
+    "name": "Supreme UPVC Pipe 63mm",
+    "brand": "Supreme",
+    "price": "",
+    "description": "Heavy-duty 63mm UPVC pipe for main water supply lines and agricultural mains.",
+    "specs": { "diameter_mm": "63", "length_m": "6", "weight_kgm": 0.85, "standard": "IS 4985" },
+    "features": ["High impact strength", "Chemical resistant", "50-year service life", "UV stabilised"],
+    "variants": [
+      { "label": "Class 3 (0.60 MPa)", "price": "310", "inStock": true },
+      { "label": "Class 4 (0.80 MPa)", "price": "390", "inStock": true }
+    ],
+    "sortOrder": 4
+  },
+  {
+    "categorySlug": "upvc-pipes",
+    "name": "Supreme UPVC Pipe 75mm",
+    "brand": "Supreme",
+    "price": "",
+    "description": "75mm UPVC main supply pipe for large farms and commercial water supply.",
+    "specs": { "diameter_mm": "75", "length_m": "6", "weight_kgm": 1.2, "standard": "IS 4985" },
+    "features": ["High impact strength", "Chemical resistant", "UV stabilised", "Long service life"],
+    "variants": [
+      { "label": "Class 3 (0.60 MPa)", "price": "440", "inStock": true },
+      { "label": "Class 4 (0.80 MPa)", "price": "560", "inStock": true }
+    ],
+    "sortOrder": 5
+  },
+  {
+    "categorySlug": "upvc-pipes",
+    "name": "Astral UPVC Pipe 110mm",
+    "brand": "Astral",
+    "price": "",
+    "description": "110mm UPVC pipe for underground mains and large agricultural distribution.",
+    "specs": { "diameter_mm": "110", "length_m": "6", "weight_kgm": 2.5, "standard": "IS 4985" },
+    "features": ["ISI marked", "UV stabilised", "High pressure rated", "Chemical resistant"],
+    "variants": [
+      { "label": "Class 2 (0.40 MPa)", "price": "820", "inStock": true },
+      { "label": "Class 3 (0.60 MPa)", "price": "1100", "inStock": true }
+    ],
+    "sortOrder": 6
+  },
+
+  {
+    "categorySlug": "cpvc-pipes",
+    "name": "Astral CPVC Pipe 15mm (1/2 inch)",
+    "brand": "Astral",
+    "price": "",
+    "description": "15mm CPVC hot and cold water pipe for indoor plumbing. Rated for 93°C.",
+    "specs": { "diameter_mm": "15", "length_m": "3", "temp_rating_c": 93, "standard": "ASTM D2846" },
+    "features": ["Hot & cold water rated", "Chlorine resistant", "Smooth inner bore", "Lead-free"],
+    "variants": [
+      { "label": "SDR 11 – 3m", "price": "85", "inStock": true },
+      { "label": "SDR 11 – 6m", "price": "165", "inStock": true }
+    ],
+    "sortOrder": 1
+  },
+  {
+    "categorySlug": "cpvc-pipes",
+    "name": "Astral CPVC Pipe 20mm (3/4 inch)",
+    "brand": "Astral",
+    "price": "",
+    "description": "20mm CPVC pipe for hot and cold water plumbing applications.",
+    "specs": { "diameter_mm": "20", "length_m": "3", "temp_rating_c": 93, "standard": "ASTM D2846" },
+    "features": ["Hot & cold water", "Chlorine resistant", "10-year warranty", "Easy solvent welding"],
+    "variants": [
+      { "label": "SDR 11 – 3m", "price": "115", "inStock": true },
+      { "label": "SDR 11 – 6m", "price": "225", "inStock": true }
+    ],
+    "sortOrder": 2
+  },
+  {
+    "categorySlug": "cpvc-pipes",
+    "name": "Ashirvad CPVC Pipe 25mm (1 inch)",
+    "brand": "Ashirvad",
+    "price": "",
+    "description": "25mm CPVC pipe for main indoor hot and cold supply lines.",
+    "specs": { "diameter_mm": "25", "length_m": "3", "temp_rating_c": 93, "standard": "ASTM D2846" },
+    "features": ["Certified for drinking water", "High temperature resistant", "Corrosion free", "Smooth bore"],
+    "variants": [
+      { "label": "3m length", "price": "175", "inStock": true },
+      { "label": "6m length", "price": "345", "inStock": true }
+    ],
+    "sortOrder": 3
+  },
+  {
+    "categorySlug": "cpvc-pipes",
+    "name": "Supreme CPVC Pipe 32mm",
+    "brand": "Supreme",
+    "price": "",
+    "description": "32mm CPVC pipe for commercial and large domestic hot water applications.",
+    "specs": { "diameter_mm": "32", "length_m": "3", "temp_rating_c": 93, "standard": "ASTM D2846" },
+    "features": ["High temp rated", "Chemical resistant", "Easy installation", "Long life"],
+    "variants": [
+      { "label": "3m length", "price": "280", "inStock": true },
+      { "label": "6m length", "price": "550", "inStock": true }
+    ],
+    "sortOrder": 4
+  },
+
+  {
+    "categorySlug": "gi-pipes",
+    "name": "GI Pipe 1/2 inch Medium Class",
+    "brand": "Tata Steel",
+    "price": "185",
+    "description": "1/2 inch GI pipe Medium class (IS 1239) for water supply and gas lines.",
+    "specs": { "size_inch": "1/2\"", "length_m": "6", "weight_kgm": 1.21, "class": "Medium (B)", "standard": "IS 1239" },
+    "features": ["Hot-dip galvanised", "Threaded ends", "Suitable for potable water", "Corrosion resistant"],
+    "variants": [],
+    "sortOrder": 1
+  },
+  {
+    "categorySlug": "gi-pipes",
+    "name": "GI Pipe 3/4 inch Medium Class",
+    "brand": "Tata Steel",
+    "price": "260",
+    "description": "3/4 inch GI pipe Medium class for water supply lines and fittings.",
+    "specs": { "size_inch": "3/4\"", "length_m": "6", "weight_kgm": 1.68, "class": "Medium (B)", "standard": "IS 1239" },
+    "features": ["Hot-dip galvanised", "Threaded ends", "IS 1239 certified", "Strong and durable"],
+    "variants": [],
+    "sortOrder": 2
+  },
+  {
+    "categorySlug": "gi-pipes",
+    "name": "GI Pipe 1 inch Medium Class",
+    "brand": "Tata Steel",
+    "price": "420",
+    "description": "1 inch GI pipe, Medium class (IS 1239) for water supply and structural use.",
+    "specs": { "size_inch": "1\"", "length_m": "6", "weight_kgm": 3.97, "class": "Medium (B)", "standard": "IS 1239" },
+    "features": ["Hot-dip galvanised", "Threaded ends", "Suitable for potable water"],
+    "variants": [],
+    "sortOrder": 3
+  },
+  {
+    "categorySlug": "gi-pipes",
+    "name": "GI Pipe 1.5 inch Medium Class",
+    "brand": "Tata Steel",
+    "price": "620",
+    "description": "1.5 inch GI pipe for main water supply lines and pump outlet connections.",
+    "specs": { "size_inch": "1.5\"", "length_m": "6", "weight_kgm": 5.4, "class": "Medium (B)", "standard": "IS 1239" },
+    "features": ["Hot-dip galvanised", "Threaded ends", "High flow capacity", "IS 1239 marked"],
+    "variants": [],
+    "sortOrder": 4
+  },
+  {
+    "categorySlug": "gi-pipes",
+    "name": "GI Pipe 2 inch Medium Class",
+    "brand": "Tata Steel",
+    "price": "880",
+    "description": "2 inch GI pipe for main supply and irrigation pump delivery lines.",
+    "specs": { "size_inch": "2\"", "length_m": "6", "weight_kgm": 7.5, "class": "Medium (B)", "standard": "IS 1239" },
+    "features": ["Hot-dip galvanised", "Threaded ends", "High flow", "IS 1239 certified"],
+    "variants": [],
+    "sortOrder": 5
+  },
+
+  {
+    "categorySlug": "column-pipes",
+    "name": "MS Column Pipe 4 inch",
+    "brand": "Local",
+    "price": "",
+    "description": "Mild steel column pipe for submersible pump installation in 4-inch borewells.",
+    "specs": { "bore_inch": "4\"", "length_m": "3", "thickness_mm": 3.2, "weight_kgm": 2.8, "standard": "IS 12818" },
+    "features": ["Hot-rolled MS construction", "Threaded coupling included", "Compatible with 4\" submersible pumps"],
+    "variants": [
+      { "label": "3m length", "price": "850", "inStock": true },
+      { "label": "6m length", "price": "1650", "inStock": true }
+    ],
+    "sortOrder": 1
+  },
+  {
+    "categorySlug": "column-pipes",
+    "name": "MS Column Pipe 5 inch",
+    "brand": "Local",
+    "price": "",
+    "description": "5-inch MS column pipe for larger submersible pump installations.",
+    "specs": { "bore_inch": "5\"", "length_m": "3", "thickness_mm": 3.5, "weight_kgm": 4.0, "standard": "IS 12818" },
+    "features": ["Heavy-duty MS construction", "Threaded ends", "Coupling included", "Suitable for 5\" bore pumps"],
+    "variants": [
+      { "label": "3m length", "price": "1200", "inStock": true },
+      { "label": "6m length", "price": "2350", "inStock": true }
+    ],
+    "sortOrder": 2
+  },
+  {
+    "categorySlug": "column-pipes",
+    "name": "MS Column Pipe 6 inch",
+    "brand": "Local",
+    "price": "",
+    "description": "6-inch heavy MS column pipe for large agricultural submersible pumps.",
+    "specs": { "bore_inch": "6\"", "length_m": "3", "thickness_mm": 4.0, "weight_kgm": 5.5, "standard": "IS 12818" },
+    "features": ["Extra heavy-duty", "Threaded coupling", "Hot-rolled MS", "For 6\" bore pumps"],
+    "variants": [
+      { "label": "3m length", "price": "1650", "inStock": true },
+      { "label": "6m length", "price": "3200", "inStock": true }
+    ],
+    "sortOrder": 3
+  },
+  {
+    "categorySlug": "column-pipes",
+    "name": "UPVC Column Pipe 63mm",
+    "brand": "Finolex",
+    "price": "",
+    "description": "UPVC column pipe for domestic and light agricultural submersible pumps.",
+    "specs": { "bore_inch": "2.5\"", "length_m": "3", "diameter_mm": 63, "weight_kgm": 0.9, "standard": "IS 12818" },
+    "features": ["Corrosion-free UPVC", "Lightweight – easy installation", "No rust or scale", "For domestic submersibles"],
+    "variants": [
+      { "label": "3m length", "price": "480", "inStock": true },
+      { "label": "6m length", "price": "920", "inStock": true }
+    ],
+    "sortOrder": 4
+  },
+
+  {
+    "categorySlug": "valves",
+    "name": "Brass Ball Valve 1/2 inch",
+    "brand": "Zoloto",
+    "price": "185",
+    "description": "Full bore brass ball valve for water supply lines. Quarter turn operation.",
+    "specs": { "valve_type": "Ball Valve", "size_inch": "1/2\"", "material": "Brass" },
+    "features": ["Full bore design", "PTFE seat for leak-free sealing", "Chrome plated handle", "Working pressure: 40 bar"],
+    "variants": [],
+    "sortOrder": 1
+  },
+  {
+    "categorySlug": "valves",
+    "name": "Brass Ball Valve 3/4 inch",
+    "brand": "Zoloto",
+    "price": "245",
+    "description": "3/4 inch full bore brass ball valve for water and non-corrosive fluid lines.",
+    "specs": { "valve_type": "Ball Valve", "size_inch": "3/4\"", "material": "Brass" },
+    "features": ["Full bore", "PTFE seat", "Quarter turn", "40 bar working pressure"],
+    "variants": [],
+    "sortOrder": 2
+  },
+  {
+    "categorySlug": "valves",
+    "name": "Brass Ball Valve 1 inch",
+    "brand": "Zoloto",
+    "price": "360",
+    "description": "1-inch heavy-duty brass ball valve for main supply lines.",
+    "specs": { "valve_type": "Ball Valve", "size_inch": "1\"", "material": "Brass" },
+    "features": ["Full bore", "PTFE seat", "Lever handle", "High pressure rated"],
+    "variants": [],
+    "sortOrder": 3
+  },
+  {
+    "categorySlug": "valves",
+    "name": "Brass Gate Valve 1/2 inch",
+    "brand": "Sant",
+    "price": "160",
+    "description": "1/2 inch brass gate valve for water supply shut-off.",
+    "specs": { "valve_type": "Gate Valve", "size_inch": "1/2\"", "material": "Brass" },
+    "features": ["Full flow when open", "Threaded ends", "ISI marked", "Durable brass body"],
+    "variants": [],
+    "sortOrder": 4
+  },
+  {
+    "categorySlug": "valves",
+    "name": "Brass Gate Valve 1 inch",
+    "brand": "Sant",
+    "price": "320",
+    "description": "1-inch brass gate valve for main water supply shut-off.",
+    "specs": { "valve_type": "Gate Valve", "size_inch": "1\"", "material": "Brass" },
+    "features": ["Full bore flow", "Threaded BS ends", "ISI certified", "Corrosion resistant"],
+    "variants": [],
+    "sortOrder": 5
+  },
+  {
+    "categorySlug": "valves",
+    "name": "Brass Check Valve 1/2 inch",
+    "brand": "Zoloto",
+    "price": "195",
+    "description": "Non-return (check) valve to prevent backflow in water supply lines.",
+    "specs": { "valve_type": "Check Valve", "size_inch": "1/2\"", "material": "Brass" },
+    "features": ["Spring-loaded disc", "Prevents backflow", "Suitable for pumps", "Threaded ends"],
+    "variants": [],
+    "sortOrder": 6
+  },
+  {
+    "categorySlug": "valves",
+    "name": "Brass Check Valve 1 inch",
+    "brand": "Zoloto",
+    "price": "380",
+    "description": "1-inch non-return valve for pump outlets and main supply lines.",
+    "specs": { "valve_type": "Check Valve", "size_inch": "1\"", "material": "Brass" },
+    "features": ["Spring-loaded", "Prevents reverse flow", "High pressure rated", "Threaded ends"],
+    "variants": [],
+    "sortOrder": 7
+  },
+  {
+    "categorySlug": "valves",
+    "name": "PVC Ball Valve 1/2 inch",
+    "brand": "Astral",
+    "price": "65",
+    "description": "PVC ball valve for irrigation and non-drinking water lines.",
+    "specs": { "valve_type": "Ball Valve", "size_inch": "1/2\"", "material": "PVC" },
+    "features": ["Lightweight", "Corrosion-free", "Quarter turn", "For irrigation use"],
+    "variants": [],
+    "sortOrder": 8
+  },
+  {
+    "categorySlug": "valves",
+    "name": "PVC Ball Valve 1 inch",
+    "brand": "Astral",
+    "price": "120",
+    "description": "1-inch PVC ball valve for UPVC pipelines and irrigation systems.",
+    "specs": { "valve_type": "Ball Valve", "size_inch": "1\"", "material": "PVC" },
+    "features": ["Chemical resistant", "Lightweight", "Easy operation", "Long service life"],
+    "variants": [],
+    "sortOrder": 9
+  },
+
+  {
+    "categorySlug": "taps-faucets",
+    "name": "Brass Pillar Cock 1/2 inch",
+    "brand": "Jaquar",
+    "price": "320",
+    "description": "Brass pillar cock for wash basins and sinks. Chrome plated finish.",
+    "specs": { "tap_type": "Pillar Cock", "size_inch": "1/2\"", "material": "Brass", "finish": "Chrome" },
+    "features": ["Chrome plated", "Quarter turn ceramic disc", "ISI marked", "Drip-free ceramic cartridge"],
+    "variants": [],
+    "sortOrder": 1
+  },
+  {
+    "categorySlug": "taps-faucets",
+    "name": "Brass Bib Cock 1/2 inch",
+    "brand": "Jaquar",
+    "price": "280",
+    "description": "Brass bib cock for wall-mount outdoor and utility taps.",
+    "specs": { "tap_type": "Bib Cock", "size_inch": "1/2\"", "material": "Brass", "finish": "Chrome" },
+    "features": ["Chrome finish", "Wall-mount fitting", "Long-lasting washer", "ISI marked"],
+    "variants": [],
+    "sortOrder": 2
+  },
+  {
+    "categorySlug": "taps-faucets",
+    "name": "Brass Stop Cock 1/2 inch",
+    "brand": "Sant",
+    "price": "180",
+    "description": "Brass stop cock for in-line water supply control.",
+    "specs": { "tap_type": "Stop Cock", "size_inch": "1/2\"", "material": "Brass" },
+    "features": ["Full bore flow", "Threaded ends", "ISI marked", "Durable construction"],
+    "variants": [],
+    "sortOrder": 3
+  },
+  {
+    "categorySlug": "taps-faucets",
+    "name": "Single Lever Basin Mixer",
+    "brand": "Jaquar",
+    "price": "1850",
+    "description": "Single lever hot and cold basin mixer tap for modern bathrooms.",
+    "specs": { "tap_type": "Basin Mixer", "size_inch": "1/2\"", "material": "Brass", "finish": "Chrome" },
+    "features": ["Single lever control", "Hot & cold mixing", "Ceramic cartridge", "Chrome finish"],
+    "variants": [],
+    "sortOrder": 4
+  },
+  {
+    "categorySlug": "taps-faucets",
+    "name": "Overhead Shower Set",
+    "brand": "Jaquar",
+    "price": "1200",
+    "description": "Overhead shower with arm and flange, chrome plated. 200mm rain shower head.",
+    "specs": { "tap_type": "Shower", "diameter_mm": 200, "material": "ABS + Brass", "finish": "Chrome" },
+    "features": ["200mm rain shower", "Anti-clog nozzles", "Adjustable arm", "Chrome finish"],
+    "variants": [],
+    "sortOrder": 5
+  },
+
+  {
+    "categorySlug": "gi-fittings",
+    "name": "GI Elbow 90° 1/2 inch",
+    "brand": "Unik",
+    "price": "28",
+    "description": "Malleable cast iron 90° elbow for GI pipe connections.",
+    "specs": { "fitting_type": "Elbow 90°", "size_inch": "1/2\"", "material": "Malleable CI", "standard": "IS 1879" },
+    "features": ["IS 1879 certified", "Galvanised finish", "Threaded ends", "Pressure rated"],
+    "variants": [],
+    "sortOrder": 1
+  },
+  {
+    "categorySlug": "gi-fittings",
+    "name": "GI Elbow 90° 1 inch",
+    "brand": "Unik",
+    "price": "65",
+    "description": "1-inch malleable iron 90° elbow for GI water supply lines.",
+    "specs": { "fitting_type": "Elbow 90°", "size_inch": "1\"", "material": "Malleable CI", "standard": "IS 1879" },
+    "features": ["IS 1879 certified", "Galvanised", "Threaded ends", "Strong construction"],
+    "variants": [],
+    "sortOrder": 2
+  },
+  {
+    "categorySlug": "gi-fittings",
+    "name": "GI Tee Equal 1/2 inch",
+    "brand": "Unik",
+    "price": "32",
+    "description": "Equal tee fitting for GI pipe branching.",
+    "specs": { "fitting_type": "Equal Tee", "size_inch": "1/2\"", "material": "Malleable CI", "standard": "IS 1879" },
+    "features": ["IS 1879 marked", "Galvanised", "Three-way connection", "Threaded all ends"],
+    "variants": [],
+    "sortOrder": 3
+  },
+  {
+    "categorySlug": "gi-fittings",
+    "name": "GI Tee Equal 1 inch",
+    "brand": "Unik",
+    "price": "75",
+    "description": "1-inch equal tee for branching GI main supply lines.",
+    "specs": { "fitting_type": "Equal Tee", "size_inch": "1\"", "material": "Malleable CI", "standard": "IS 1879" },
+    "features": ["IS 1879 certified", "Galvanised finish", "Three-way connection"],
+    "variants": [],
+    "sortOrder": 4
+  },
+  {
+    "categorySlug": "gi-fittings",
+    "name": "GI Union 1/2 inch",
+    "brand": "Unik",
+    "price": "55",
+    "description": "GI union connector for easy pipe dismantling and maintenance.",
+    "specs": { "fitting_type": "Union", "size_inch": "1/2\"", "material": "Malleable CI", "standard": "IS 1879" },
+    "features": ["Easy disconnect", "Threaded ends", "IS 1879 certified", "Galvanised"],
+    "variants": [],
+    "sortOrder": 5
+  },
+  {
+    "categorySlug": "gi-fittings",
+    "name": "GI Union 1 inch",
+    "brand": "Unik",
+    "price": "120",
+    "description": "1-inch GI union for pump connections and easy maintenance access.",
+    "specs": { "fitting_type": "Union", "size_inch": "1\"", "material": "Malleable CI", "standard": "IS 1879" },
+    "features": ["Easy disconnect", "Pressure rated", "IS 1879 marked", "Galvanised"],
+    "variants": [],
+    "sortOrder": 6
+  },
+  {
+    "categorySlug": "gi-fittings",
+    "name": "GI Nipple 1/2 inch",
+    "brand": "Unik",
+    "price": "18",
+    "description": "Short GI nipple connector for close coupling of fittings.",
+    "specs": { "fitting_type": "Nipple", "size_inch": "1/2\"", "material": "GI Steel", "standard": "IS 1239" },
+    "features": ["Galvanised", "Both end threaded", "Standard IS 1239", "Compact"],
+    "variants": [],
+    "sortOrder": 7
+  },
+
+  {
+    "categorySlug": "pvc-fittings",
+    "name": "PVC Elbow 90° 25mm",
+    "brand": "Astral",
+    "price": "12",
+    "description": "25mm PVC pressure elbow for UPVC pipelines.",
+    "specs": { "fitting_type": "Elbow 90°", "diameter_mm": 25, "material": "PVC", "standard": "IS 7834" },
+    "features": ["Solvent weld", "IS 7834 certified", "Chemical resistant", "Smooth flow"],
+    "variants": [],
+    "sortOrder": 1
+  },
+  {
+    "categorySlug": "pvc-fittings",
+    "name": "PVC Elbow 90° 40mm",
+    "brand": "Astral",
+    "price": "22",
+    "description": "40mm PVC elbow for UPVC supply lines.",
+    "specs": { "fitting_type": "Elbow 90°", "diameter_mm": 40, "material": "PVC", "standard": "IS 7834" },
+    "features": ["Solvent weld", "IS 7834 certified", "Durable", "Smooth bore"],
+    "variants": [],
+    "sortOrder": 2
+  },
+  {
+    "categorySlug": "pvc-fittings",
+    "name": "PVC Tee Equal 25mm",
+    "brand": "Astral",
+    "price": "15",
+    "description": "25mm equal tee for PVC water supply branching.",
+    "specs": { "fitting_type": "Equal Tee", "diameter_mm": 25, "material": "PVC", "standard": "IS 7834" },
+    "features": ["Solvent weld", "IS 7834 marked", "Chemical resistant", "Three-way"],
+    "variants": [],
+    "sortOrder": 3
+  },
+  {
+    "categorySlug": "pvc-fittings",
+    "name": "PVC Tee Equal 63mm",
+    "brand": "Supreme",
+    "price": "65",
+    "description": "63mm PVC equal tee for main supply branching.",
+    "specs": { "fitting_type": "Equal Tee", "diameter_mm": 63, "material": "PVC", "standard": "IS 7834" },
+    "features": ["Solvent weld", "IS 7834 certified", "High flow", "Durable"],
+    "variants": [],
+    "sortOrder": 4
+  },
+  {
+    "categorySlug": "pvc-fittings",
+    "name": "PVC Coupling 25mm",
+    "brand": "Astral",
+    "price": "8",
+    "description": "25mm PVC straight coupling for joining pipe lengths.",
+    "specs": { "fitting_type": "Coupling", "diameter_mm": 25, "material": "PVC", "standard": "IS 7834" },
+    "features": ["Solvent weld", "Straight join", "Smooth bore", "Durable"],
+    "variants": [],
+    "sortOrder": 5
+  },
+  {
+    "categorySlug": "pvc-fittings",
+    "name": "PVC End Cap 25mm",
+    "brand": "Astral",
+    "price": "6",
+    "description": "25mm PVC end cap for closing pipe ends.",
+    "specs": { "fitting_type": "End Cap", "diameter_mm": 25, "material": "PVC", "standard": "IS 7834" },
+    "features": ["Solvent weld", "Pressure tight", "Chemical resistant", "Easy install"],
+    "variants": [],
+    "sortOrder": 6
+  },
+
+  {
+    "categorySlug": "water-tanks",
+    "name": "Sintex Triple Layer Water Tank 500L",
+    "brand": "Sintex",
+    "price": "2100",
+    "description": "500L triple layer overhead water storage tank with UV protection.",
+    "specs": { "capacity_ltrs": "500", "material": "HDPE Plastic", "layers": "Triple Layer" },
+    "features": ["Triple layer: UV outer, insulation middle, food-grade inner", "Anti-bacterial inner", "Dust & mosquito proof lid", "10-year warranty"],
+    "variants": [],
+    "sortOrder": 1
+  },
+  {
+    "categorySlug": "water-tanks",
+    "name": "Sintex Triple Layer Water Tank 1000L",
+    "brand": "Sintex",
+    "price": "3800",
+    "description": "1000L triple layer overhead water storage tank with UV protection and anti-bacterial inner layer.",
+    "specs": { "capacity_ltrs": "1000", "material": "HDPE Plastic", "layers": "Triple Layer" },
+    "features": ["Triple layer construction", "Anti-bacterial inner surface", "Dust and mosquito proof lid", "10-year warranty"],
+    "variants": [],
+    "sortOrder": 2
+  },
+  {
+    "categorySlug": "water-tanks",
+    "name": "Sintex Triple Layer Water Tank 2000L",
+    "brand": "Sintex",
+    "price": "7200",
+    "description": "2000L large capacity triple layer tank for large homes and commercial use.",
+    "specs": { "capacity_ltrs": "2000", "material": "HDPE Plastic", "layers": "Triple Layer" },
+    "features": ["High capacity", "UV stabilised outer layer", "Food-grade inner", "10-year warranty"],
+    "variants": [],
+    "sortOrder": 3
+  },
+  {
+    "categorySlug": "water-tanks",
+    "name": "Penguin Double Layer Tank 1000L",
+    "brand": "Penguin",
+    "price": "3200",
+    "description": "1000L double layer HDPE water tank for overhead and underground storage.",
+    "specs": { "capacity_ltrs": "1000", "material": "HDPE Plastic", "layers": "Double Layer" },
+    "features": ["UV resistant outer layer", "Food-grade inner", "Mosquito-proof lid", "5-year warranty"],
+    "variants": [],
+    "sortOrder": 4
+  },
+  {
+    "categorySlug": "water-tanks",
+    "name": "Penguin Double Layer Tank 500L",
+    "brand": "Penguin",
+    "price": "1750",
+    "description": "500L double layer tank for small homes and compact installations.",
+    "specs": { "capacity_ltrs": "500", "material": "HDPE Plastic", "layers": "Double Layer" },
+    "features": ["Compact design", "UV resistant", "Food-grade inner", "5-year warranty"],
+    "variants": [],
+    "sortOrder": 5
+  },
+
+  {
+    "categorySlug": "pump-wire",
+    "name": "Polycab Submersible Pump Cable 1.5 sqmm",
+    "brand": "Polycab",
+    "price": "",
+    "description": "3-core flat submersible pump cable for domestic borewell wiring. ISI certified.",
+    "specs": { "cores": "3 Core", "gauge_sqmm": "1.5" },
+    "features": ["ISI certified", "Water-resistant PVC jacket", "Flat design for easy threading", "For domestic pumps up to 1.5 HP"],
+    "variants": [
+      { "label": "Per metre", "price": "38", "inStock": true },
+      { "label": "30m roll", "price": "1100", "inStock": true },
+      { "label": "50m roll", "price": "1800", "inStock": true }
+    ],
+    "sortOrder": 1
+  },
+  {
+    "categorySlug": "pump-wire",
+    "name": "Polycab Submersible Pump Cable 2.5 sqmm",
+    "brand": "Polycab",
+    "price": "",
+    "description": "3-core flat submersible pump cable for borewell pump wiring. PVC insulated, water resistant.",
+    "specs": { "cores": "3 Core", "gauge_sqmm": "2.5" },
+    "features": ["ISI certified", "Water-resistant PVC jacket", "Flat design for easy threading", "Temperature range: -15°C to 70°C"],
+    "variants": [
+      { "label": "Per metre", "price": "58", "inStock": true },
+      { "label": "30m roll", "price": "1650", "inStock": true },
+      { "label": "50m roll", "price": "2700", "inStock": true }
+    ],
+    "sortOrder": 2
+  },
+  {
+    "categorySlug": "pump-wire",
+    "name": "Polycab Submersible Pump Cable 4 sqmm",
+    "brand": "Polycab",
+    "price": "",
+    "description": "4 sqmm 3-core flat submersible cable for 3–7.5 HP agricultural pumps.",
+    "specs": { "cores": "3 Core", "gauge_sqmm": "4" },
+    "features": ["ISI certified", "Heavy-duty PVC insulation", "Water resistant", "For 3–7.5 HP pumps"],
+    "variants": [
+      { "label": "Per metre", "price": "88", "inStock": true },
+      { "label": "30m roll", "price": "2550", "inStock": true },
+      { "label": "50m roll", "price": "4200", "inStock": true }
+    ],
+    "sortOrder": 3
+  },
+  {
+    "categorySlug": "pump-wire",
+    "name": "Havells Submersible Pump Cable 2.5 sqmm",
+    "brand": "Havells",
+    "price": "",
+    "description": "Havells 3-core flat pump cable for borewell submersible pump wiring.",
+    "specs": { "cores": "3 Core", "gauge_sqmm": "2.5" },
+    "features": ["Havells brand quality", "Water & heat resistant", "ISI marked", "Flat profile"],
+    "variants": [
+      { "label": "Per metre", "price": "62", "inStock": true },
+      { "label": "30m roll", "price": "1800", "inStock": true },
+      { "label": "50m roll", "price": "2950", "inStock": true }
+    ],
+    "sortOrder": 4
+  },
+  {
+    "categorySlug": "pump-wire",
+    "name": "Polycab Submersible Pump Cable 6 sqmm",
+    "brand": "Polycab",
+    "price": "",
+    "description": "6 sqmm heavy-duty 3-core cable for 10–20 HP agricultural pump installations.",
+    "specs": { "cores": "3 Core", "gauge_sqmm": "6" },
+    "features": ["Heavy-duty insulation", "For 10–20 HP pumps", "ISI certified", "Water-resistant jacket"],
+    "variants": [
+      { "label": "Per metre", "price": "130", "inStock": true },
+      { "label": "30m roll", "price": "3800", "inStock": true },
+      { "label": "50m roll", "price": "6200", "inStock": true }
+    ],
+    "sortOrder": 5
+  },
+
+  {
+    "categorySlug": "starters-panels",
+    "name": "DOL Starter 1 HP Single Phase",
+    "brand": "L&T",
+    "price": "850",
+    "description": "Direct Online starter for single-phase motors up to 1 HP with overload relay.",
+    "specs": { "starter_type": "DOL Starter", "hp_rating": 1, "phases": "Single Phase" },
+    "features": ["L&T contactor", "Thermal overload relay", "Start/Stop push button", "IP44 enclosure"],
+    "variants": [],
+    "sortOrder": 1
+  },
+  {
+    "categorySlug": "starters-panels",
+    "name": "DOL Starter 3 HP Single Phase",
+    "brand": "L&T",
+    "price": "1400",
+    "description": "DOL starter for single-phase 3 HP motors with overload protection.",
+    "specs": { "starter_type": "DOL Starter", "hp_rating": 3, "phases": "Single Phase" },
+    "features": ["Silver alloy contacts", "Adjustable overload relay", "Start/Stop buttons", "IP44 enclosure"],
+    "variants": [],
+    "sortOrder": 2
+  },
+  {
+    "categorySlug": "starters-panels",
+    "name": "DOL Starter 7.5 HP 3 Phase",
+    "brand": "L&T",
+    "price": "2200",
+    "description": "Direct Online starter for 3-phase motors up to 7.5 HP. With overload relay and main contactor.",
+    "specs": { "starter_type": "DOL Starter", "hp_rating": 7.5, "phases": "3 Phase" },
+    "features": ["L&T contactor with silver alloy contacts", "Adjustable thermal overload relay", "IP54 enclosure", "Start/Stop push button included"],
+    "variants": [],
+    "sortOrder": 3
+  },
+  {
+    "categorySlug": "starters-panels",
+    "name": "DOL Starter 10 HP 3 Phase",
+    "brand": "L&T",
+    "price": "3200",
+    "description": "3-phase DOL starter for 10 HP agricultural pump motors.",
+    "specs": { "starter_type": "DOL Starter", "hp_rating": 10, "phases": "3 Phase" },
+    "features": ["Heavy-duty contactor", "Adjustable overload relay", "IP54 box", "Phase failure relay"],
+    "variants": [],
+    "sortOrder": 4
+  },
+  {
+    "categorySlug": "starters-panels",
+    "name": "Star Delta Starter 10 HP 3 Phase",
+    "brand": "L&T",
+    "price": "5500",
+    "description": "Star-delta starter for 10 HP 3-phase motors — reduces starting current.",
+    "specs": { "starter_type": "Star-Delta Starter", "hp_rating": 10, "phases": "3 Phase" },
+    "features": ["Reduced starting current", "3 contactors L&T", "Timer relay included", "IP54 panel"],
+    "variants": [],
+    "sortOrder": 5
+  },
+  {
+    "categorySlug": "starters-panels",
+    "name": "Star Delta Starter 15 HP 3 Phase",
+    "brand": "Siemens",
+    "price": "7800",
+    "description": "Siemens star-delta starter for 15 HP 3-phase pump motors.",
+    "specs": { "starter_type": "Star-Delta Starter", "hp_rating": 15, "phases": "3 Phase" },
+    "features": ["Siemens contactors", "Electronic timer", "Phase failure protection", "IP54 panel with door"],
+    "variants": [],
+    "sortOrder": 6
+  },
+  {
+    "categorySlug": "starters-panels",
+    "name": "Star Delta Starter 20 HP 3 Phase",
+    "brand": "Siemens",
+    "price": "10500",
+    "description": "Heavy-duty star-delta starter for 20 HP agricultural pump installations.",
+    "specs": { "starter_type": "Star-Delta Starter", "hp_rating": 20, "phases": "3 Phase" },
+    "features": ["Siemens heavy-duty contactors", "Adjustable timer", "Phase & overload protection", "Powder-coated IP55 panel"],
+    "variants": [],
+    "sortOrder": 7
+  },
+  {
+    "categorySlug": "starters-panels",
+    "name": "Single Phase Voltage Guard",
+    "brand": "V-Guard",
+    "price": "1200",
+    "description": "Voltage stabilizer/guard for single-phase pump motors. Protects against over/under voltage.",
+    "specs": { "starter_type": "Voltage Guard", "phases": "Single Phase", "input_voltage": "130–280V" },
+    "features": ["Auto cut-off on high/low voltage", "Time delay restart", "LED indicators", "For pumps up to 3 HP"],
+    "variants": [],
+    "sortOrder": 8
+  }
+]
