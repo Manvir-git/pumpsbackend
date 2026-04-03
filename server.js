@@ -36,6 +36,12 @@ const verifyToken = (req, res, next) => {
   }
 };
 
+// ── Keep-alive ping (hit every 5 min by uptime monitor) ───────────────────────
+app.get('/ping', (_req, res) => {
+  console.log('working');
+  res.json({ status: 'working' });
+});
+
 // ── Routes ─────────────────────────────────────────────────────────────────────
 app.use('/api/categories', require('./routes/categoryRoute'));
 app.use('/api/products',   require('./routes/productRoute'));
