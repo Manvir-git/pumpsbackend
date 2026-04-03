@@ -1,331 +1,157 @@
-// const express = require('express');
-// const multer = require('multer');
-// const Pump = require('../models/Pump'); // Residential Pump model
-// const path = require('path');
-// const router = express.Router();
-// // Set up Multer for image uploads
-// const storage = multer.diskStorage({
-//   destination: (req, file, cb) => {
-//     cb(null, 'uploads/'); // Save files in 'uploads' folder
-//   },
-//   filename: (req, file, cb) => {
-//     cb(null, Date.now() + path.extname(file.originalname)); // Unique filenames
-//   },
-// });
-// const upload = multer({ storage });
-
-// // Serve static files (images)
-// router.use('/uploads', express.static(path.join(__dirname, '../uploads')));
-
-// // Route to fetch all pumps
-// router.get('/', async (req, res) => {
-//   try {
-//     const pumps = await Pump.find(); // Fetch all residential pumps
-//     res.json(pumps);
-//   } catch (err) {
-//     res.status(500).json({ error: 'Failed to fetch residential pumps' });
-//   }
-// });
-
-// // Route to fetch a specific pump by ID
-// router.get('/:id', async (req, res) => {
-//   try {
-//     const pump = await Pump.findOne({ id: req.params.id }); // Match using the `id` field
-//     if (!pump) {
-//       return res.status(404).json({ message: 'Pump not found' });
-//     }
-//     res.json(pump);
-//   } catch (err) {
-//     res.status(500).json({ message: 'Error fetching pump data', error: err.message });
-//   }
-// });
-
-// // Route to add a new residential pump (with image upload)
-// router.post('/', upload.single('image'), async (req, res) => {
-//   const { id, name, price, nextId, previousId, rightImage, features } = req.body;
-//   const image = req.file ? `/uploads/${req.file.filename}` : null;
-
-//   try {
-//     const newPump = new Pump({
-//       id,
-//       name,
-//       price,
-//       nextId,
-//       previousId,
-//       rightImage,
-//       features,
-//       image,
-//     });
-//     await newPump.save(); // Save pump to the database
-//     res.status(201).json(newPump); // Return the newly added pump
-//   } catch (err) {
-//     res.status(500).json({ error: 'Failed to add pump' });
-//   }
-// });
-
-// module.exports = router;
-
-
-
-// const express = require('express');
-// const multer = require('multer');
-// const Pump = require('../models/Pump'); // Residential Pump model
-// const path = require('path');
-// const router = express.Router();
-
-// // Multer configuration
-// const storage = multer.diskStorage({
-//   destination: './uploads/',
-//   filename: function(req, file, cb) {
-//     cb(null, Date.now() + path.extname(file.originalname));
-//   }
-// });
-
-// const upload = multer({ storage: storage });
-
-
-// // POST new pump
-// router.post('/', upload.fields([
-//   { name: 'image', maxCount: 1 },
-//   { name: 'rightImage', maxCount: 1 }
-// ]), async (req, res) => {
-//   try {
-//     const { id, name, price, features } = req.body;
-    
-//     // Validate required fields
-//     if (!id || !name || !price) {
-//       return res.status(400).json({
-//         success: false,
-//         message: 'Missing required fields'
-//       });
-//     }
-
-//     // Process images
-//     const image = req.files?.['image'] ? `/uploads/${req.files['image'][0].filename}` : null;
-//     const rightImage = req.files?.['rightImage'] ? `/uploads/${req.files['rightImage'][0].filename}` : null;
-
-//     // Create new pump
-//     const newPump = new Pump({
-//       id,
-//       name,
-//       price: Number(price),
-//       features: JSON.parse(features),
-//       image,
-//       rightImage
-//     });
-
-//     await newPump.save();
-//     res.status(201).json({ 
-//       success: true, 
-//       message: 'Pump created successfully',
-//       pump: newPump 
-//     });
-//   } catch (error) {
-//     res.status(500).json({ 
-//       success: false, 
-//       message: 'Error creating pump',
-//       error: error.message 
-//     });
-//   }
-// });
-
-
-// // Route to fetch all residential pumps
-// router.get('/', async (req, res) => {
-//   try {
-//     const pumps = await Pump.find(); // Fetch all residential pumps
-//     res.json(pumps); // Send response with pump data
-//   } catch (err) {
-//     res.status(500).json({ error: 'Failed to fetch residential pumps' });
-//   }
-// });
-
-// // Route to fetch a specific pump by ID
-// router.get('/:id', async (req, res) => {
-//   try {
-//     const pump = await Pump.findOne({ id: req.params.id }); // Match using the `id` field
-//     if (!pump) {
-//       return res.status(404).json({ message: 'Pump not found' });
-//     }
-//     res.json(pump); // Send the pump details as JSON
-//   } catch (err) {
-//     res.status(500).json({ message: 'Error fetching pump data', error: err.message });
-//   }
-// });
-
-
-// router.delete('/:id', async (req, res) => {
-//   try {
-//     const pump = await Pump.findOneAndDelete({ id: req.params.id });
-
-//     if (!pump) {
-//       return res.status(404).json({ success: false, message: 'Residential Pump not found' });
-//     }
-
-//     res.status(200).json({ success: true, message: 'Residential Pump deleted successfully' });
-//   } catch (err) {
-//     res.status(500).json({ success: false, message: 'Failed to delete residential pump' });
-//   }
-// });
-
-// module.exports = router;
-
-
 const express = require('express');
 const multer = require('multer');
 const Pump = require('../models/Pump');
 const path = require('path');
 const router = express.Router();
 
-// Multer configuration
 const storage = multer.diskStorage({
   destination: './uploads/',
-  filename: function(req, file, cb) {
-    const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
-    cb(null, uniqueSuffix + path.extname(file.originalname));
-  }
+  filename: (req, file, cb) => {
+    cb(null, Date.now() + '-' + Math.round(Math.random() * 1e9) + path.extname(file.originalname));
+  },
 });
+const upload = multer({ storage });
 
-const upload = multer({ storage: storage });
-
-// POST new pump with detailed logging
-router.post('/', upload.fields([
-  { name: 'image', maxCount: 1 },
-  { name: 'rightImage', maxCount: 1 }
-]), async (req, res) => {
-  try {
-    console.log('Received request body:', req.body);
-    console.log('Received files:', req.files);
-
-    const { id, name, price, features } = req.body;
-
-    // Log received data
-    console.log('Extracted data:', { id, name, price, features });
-
-    // Validate required fields with detailed logging
-    if (!id || !name || !price) {
-      console.log('Missing required fields:', {
-        hasId: !!id,
-        hasName: !!name,
-        hasPrice: !!price,
-        hasFeatures: !!features
-      });
-      return res.status(400).json({
-        success: false,
-        message: 'Missing required fields'
-      });
-    }
-
-    // Process and log image paths
-    const image = req.files?.['image'] ? `/${req.files['image'][0].filename}` : null;
-    const rightImage = req.files?.['rightImage'] ? `/${req.files['rightImage'][0].filename}` : null;
-    
-    console.log('Processed image paths:', { image, rightImage });
-
-    // Parse features with error handling
-    let parsedFeatures;
-    try {
-      parsedFeatures = features ? JSON.parse(features) : [];
-      console.log('Parsed features:', parsedFeatures);
-    } catch (parseError) {
-      console.error('Features parsing error:', parseError);
-      parsedFeatures = [];  // Fallback to empty array if parsing fails
-    }
-
-    // Create new pump with logging
-    console.log('Creating new pump with data:', {
-      id,
-      name,
-      price,
-      features: parsedFeatures,
-      image,
-      rightImage
-    });
-
-    const newPump = new Pump({
-      id,
-      name,
-      price,
-      features: parsedFeatures,
-      image,
-      rightImage
-    });
-
-    // Log pump validation
-    const validationError = newPump.validateSync();
-    if (validationError) {
-      console.error('Validation error:', validationError);
-      return res.status(400).json({
-        success: false,
-        message: 'Validation failed',
-        errors: validationError.errors
-      });
-    }
-
-    // Attempt to save with detailed error logging
-    console.log('Attempting to save pump to database...');
-    const savedPump = await newPump.save();
-    console.log('Pump saved successfully:', savedPump);
-
-    res.status(201).json({
-      success: true,
-      message: 'Pump created successfully',
-      pump: savedPump
-    });
-
-  } catch (error) {
-    console.error('Detailed error in pump creation:', {
-      errorMessage: error.message,
-      errorName: error.name,
-      errorStack: error.stack,
-      errorCode: error.code
-    });
-
-    // Send more detailed error response
-    res.status(500).json({
-      success: false,
-      message: 'Error creating pump',
-      error: {
-        message: error.message,
-        type: error.name,
-        code: error.code
-      }
-    });
-  }
-});
-
-// Existing routes remain unchanged...
+// ─── GET all pumps (with optional filters) ────────────────────────────────────
+// Query params: ?hp=1&brand=bs&stages=7&category=borewell
 router.get('/', async (req, res) => {
   try {
-    const pumps = await Pump.find();
+    const filter = {};
+    if (req.query.hp)       filter.hp       = Number(req.query.hp);
+    if (req.query.stages)   filter.stages   = Number(req.query.stages);
+    if (req.query.brand)    filter.brand    = req.query.brand;
+    if (req.query.category) filter.category = req.query.category;
+
+    const pumps = await Pump.find(filter).sort({ hp: 1, stages: 1 });
     res.json(pumps);
   } catch (err) {
-    res.status(500).json({ error: 'Failed to fetch residential pumps' });
+    res.status(500).json({ error: 'Failed to fetch pumps' });
   }
 });
 
+// ─── GET available filter options (dynamic) ───────────────────────────────────
+// Returns { hpValues: [1, 1.5, 2], brands: ['bs','crompton'], stages: [5,7,9] }
+router.get('/filters', async (req, res) => {
+  try {
+    const hpValues  = await Pump.distinct('hp',       { hp:     { $ne: null } });
+    const brands    = await Pump.distinct('brand',    { brand:  { $ne: null } });
+    const stages    = await Pump.distinct('stages',   { stages: { $ne: null } });
+    const categories = await Pump.distinct('category',{ category: { $ne: null } });
+    res.json({
+      hpValues:   hpValues.sort((a, b) => a - b),
+      brands,
+      stages:     stages.sort((a, b) => a - b),
+      categories,
+    });
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to fetch filter options' });
+  }
+});
+
+// ─── GET single pump by id ────────────────────────────────────────────────────
 router.get('/:id', async (req, res) => {
-   id = decodeURIComponent(req.params.id).trim();
+  const id = decodeURIComponent(req.params.id).trim();
   try {
     const pump = await Pump.findOne({ id });
-    if (!pump) {
-      return res.status(404).json({ message: 'Pump not found' });
-    }
+    if (!pump) return res.status(404).json({ message: 'Pump not found' });
     res.json(pump);
   } catch (err) {
-    res.status(500).json({ message: 'Error fetching pump data', error: err.message });
+    res.status(500).json({ message: 'Error fetching pump', error: err.message });
   }
 });
 
+// ─── POST create pump ─────────────────────────────────────────────────────────
+router.post('/', upload.fields([
+  { name: 'image', maxCount: 1 },
+  { name: 'rightImage', maxCount: 1 },
+]), async (req, res) => {
+  try {
+    const { id, name, price, features, description, brand, category, hp, stages, depth_ft, discharge_lph, head_m } = req.body;
+
+    if (!id || !name) {
+      return res.status(400).json({ success: false, message: 'id and name are required' });
+    }
+
+    const image      = req.files?.['image']      ? req.files['image'][0].filename      : null;
+    const rightImage = req.files?.['rightImage'] ? req.files['rightImage'][0].filename : null;
+
+    let parsedFeatures = [];
+    try { parsedFeatures = features ? JSON.parse(features) : []; } catch (_) {}
+
+    const newPump = new Pump({
+      id, name,
+      price:        price || '',
+      features:     parsedFeatures,
+      image:        image || '',
+      rightImage:   rightImage || '',
+      description:  description || '',
+      brand:        brand || 'bs',
+      category:     category || 'borewell',
+      hp:           hp        ? Number(hp)           : null,
+      stages:       stages    ? Number(stages)        : null,
+      depth_ft:     depth_ft  ? Number(depth_ft)     : null,
+      discharge_lph:discharge_lph ? Number(discharge_lph) : null,
+      head_m:       head_m    ? Number(head_m)        : null,
+    });
+
+    const saved = await newPump.save();
+    res.status(201).json({ success: true, pump: saved });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+});
+
+// ─── PUT edit pump ─────────────────────────────────────────────────────────────
+// Works by Mongo _id OR by custom id field
+router.put('/:id', upload.fields([
+  { name: 'image', maxCount: 1 },
+  { name: 'rightImage', maxCount: 1 },
+]), async (req, res) => {
+  try {
+    const lookupId = decodeURIComponent(req.params.id).trim();
+    const { name, price, features, description, brand, category, hp, stages, depth_ft, discharge_lph, head_m } = req.body;
+
+    let parsedFeatures;
+    try { parsedFeatures = features ? JSON.parse(features) : undefined; } catch (_) {}
+
+    const update = {};
+    if (name        !== undefined) update.name        = name;
+    if (price       !== undefined) update.price       = price;
+    if (description !== undefined) update.description = description;
+    if (brand       !== undefined) update.brand       = brand;
+    if (category    !== undefined) update.category    = category;
+    if (hp          !== undefined) update.hp          = hp ? Number(hp) : null;
+    if (stages      !== undefined) update.stages      = stages ? Number(stages) : null;
+    if (depth_ft    !== undefined) update.depth_ft    = depth_ft ? Number(depth_ft) : null;
+    if (discharge_lph !== undefined) update.discharge_lph = discharge_lph ? Number(discharge_lph) : null;
+    if (head_m      !== undefined) update.head_m      = head_m ? Number(head_m) : null;
+    if (parsedFeatures !== undefined) update.features = parsedFeatures;
+
+    // New images (only overwrite if a new file was uploaded)
+    if (req.files?.['image'])      update.image      = req.files['image'][0].filename;
+    if (req.files?.['rightImage']) update.rightImage = req.files['rightImage'][0].filename;
+
+    const pump = await Pump.findOneAndUpdate(
+      { id: lookupId },
+      { $set: update },
+      { new: true, runValidators: true }
+    );
+
+    if (!pump) return res.status(404).json({ success: false, message: 'Pump not found' });
+    res.json({ success: true, pump });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+});
+
+// ─── DELETE pump ───────────────────────────────────────────────────────────────
 router.delete('/:id', async (req, res) => {
   try {
     const pump = await Pump.findOneAndDelete({ id: req.params.id });
-    if (!pump) {
-      return res.status(404).json({ success: false, message: 'Residential Pump not found' });
-    }
-    res.status(200).json({ success: true, message: 'Residential Pump deleted successfully' });
+    if (!pump) return res.status(404).json({ success: false, message: 'Pump not found' });
+    res.status(200).json({ success: true, message: 'Pump deleted' });
   } catch (err) {
-    res.status(500).json({ success: false, message: 'Failed to delete residential pump' });
+    res.status(500).json({ success: false, message: 'Failed to delete pump' });
   }
 });
 

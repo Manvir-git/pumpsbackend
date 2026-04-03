@@ -1,58 +1,44 @@
 const express = require('express');
-const router = express.Router();
-const mongoose = require('mongoose');
+const router  = express.Router();
+const prisma  = require('../lib/prisma');
 
-const enquirySchema = new mongoose.Schema({
-    email: String,
-    mobile: String,
-    city: String,
-    pincode: String,
-    country: String,
-    description: String,
-    productCode: String,
-    productName: String,
-    title: String,
-    company: String,
-    landline: String,
-    state: String
-});
-
-const Enquiry = mongoose.model('enqueries', enquirySchema);
-
-// POST route to handle form submission
+// POST /api/enqueries
 router.post('/', async (req, res) => {
   try {
-      const newEnquiry = new Enquiry(req.body);
-      await newEnquiry.save();
-      res.status(200).json({ message: 'Enquiry submitted successfully' });
-  } catch (error) {
-      console.error('Error submitting enquiry:', error);
-      res.status(500).json({ message: 'Error submitting enquiry', error });
+    const { name, phone, email, product, message } = req.body;
+    const enq = await prisma.enquiry.create({
+      data: {
+        name:    name    || '',
+        phone:   phone   || '',
+        email:   email   || '',
+        product: product || '',
+        message: message || '',
+      },
+    });
+    res.status(201).json({ success: true, ...enq, _id: enq.id });
+  } catch (err) {
+    res.status(400).json({ error: err.message });
   }
 });
 
-
+// GET /api/enqueries
 router.get('/', async (req, res) => {
   try {
-      const enquiries = await Enquiry.find(); // Fetch all enquiries from the database
-      res.status(200).json(enquiries);
-  } catch (error) {
-      res.status(500).json({ message: 'Error fetching enquiries', error });
+    const enqs = await prisma.enquiry.findMany({ orderBy: { createdAt: 'desc' } });
+    res.json(enqs.map(e => ({ ...e, _id: e.id })));
+  } catch (err) {
+    res.status(500).json({ error: err.message });
   }
 });
+
+// DELETE /api/enqueries/:id
 router.delete('/:id', async (req, res) => {
   try {
-    const enquiryId = req.params.id;
-    const deletedEnquiry = await Enquiry.findByIdAndDelete(enquiryId);
-
-    if (!deletedEnquiry) {
-      return res.status(404).json({ message: 'Enquiry not found' });
-    }
-
-    res.status(200).json({ message: 'Enquiry deleted successfully' });
-  } catch (error) {
-    console.error('Error deleting enquiry:', error);
-    res.status(500).json({ message: 'Error deleting enquiry', error });
+    await prisma.enquiry.delete({ where: { id: req.params.id } });
+    res.json({ success: true });
+  } catch (err) {
+    res.status(400).json({ error: err.message });
   }
 });
+
 module.exports = router;
