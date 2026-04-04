@@ -82,3 +82,18 @@ model Enquiry {
   message   String   @default("")
   createdAt DateTime @default(now())
 }
+
+model PageView {
+  id        String   @id @default(cuid())
+  path      String
+  ip        String   @default("")
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+  @@index([ip])
+}
+
+model Setting {
+  key   String @id
+  value String
+}

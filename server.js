@@ -1,10 +1,11 @@
 require('dotenv').config();
 
-const express = require('express');
-const cors    = require('cors');
-const path    = require('path');
-const jwt     = require('jsonwebtoken');
-const prisma  = require('./lib/prisma');
+const express  = require('express');
+const cors     = require('cors');
+const path     = require('path');
+const jwt      = require('jsonwebtoken');
+const bcrypt   = require('bcryptjs');
+const prisma   = require('./lib/prisma');
 
 const app = express();
 
@@ -52,6 +53,7 @@ app.use('/api/import',     require('./routes/importRoute'));
 app.use('/api/stats',      require('./routes/statsRoute'));
 app.use('/api/search',     require('./routes/searchRoute'));
 app.use('/api/customers',  require('./routes/customersRoute'));
+app.use('/api/analytics',  require('./routes/analyticsRoute'));
 
 // ── Seed categories endpoint (called from Admin panel) ─────────────────────────
 app.post('/api/seed-categories', async (req, res) => {
@@ -122,19 +124,59 @@ app.post('/api/seed-categories', async (req, res) => {
   }
 });
 
+// ── Helper: get admin credentials (DB overrides env) ─────────────────────────
+async function getAdminCreds() {
+  const [emailSetting, hashSetting] = await Promise.all([
+    prisma.setting.findUnique({ where: { key: 'admin_email' } }),
+    prisma.setting.findUnique({ where: { key: 'admin_password_hash' } }),
+  ]);
+  return {
+    email:        emailSetting?.value  || process.env.ADMIN_EMAIL    || 'harry5510@gmail.com',
+    passwordHash: hashSetting?.value   || null,
+    plainFallback: process.env.ADMIN_PASSWORD || 'adminharry',
+  };
+}
+
 // ── Admin login ────────────────────────────────────────────────────────────────
 app.post('/admin/login', async (req, res) => {
   const { email, password } = req.body;
-  const ADMIN_EMAIL    = process.env.ADMIN_EMAIL    || 'harry5510@gmail.com';
-  const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'adminharry';
+  const creds = await getAdminCreds();
 
-  if (email === ADMIN_EMAIL && password === ADMIN_PASSWORD) {
+  const emailMatch = email === creds.email;
+  const passwordMatch = creds.passwordHash
+    ? await bcrypt.compare(password, creds.passwordHash)
+    : password === creds.plainFallback;
+
+  if (emailMatch && passwordMatch) {
     const token = jwt.sign({ email, role: 'admin', lastActivity: Date.now() }, SECRET_KEY, { expiresIn: '7d' });
     return res.json({ token, message: 'Login successful', user: { email } });
   }
 
-  await new Promise(r => setTimeout(r, 500)); // timing-safe delay
+  await new Promise(r => setTimeout(r, 500));
   return res.status(401).json({ message: 'Invalid credentials' });
+});
+
+// ── Change admin credentials ───────────────────────────────────────────────────
+app.put('/admin/credentials', verifyToken, async (req, res) => {
+  const { currentPassword, newEmail, newPassword } = req.body;
+  if (!currentPassword) return res.status(400).json({ error: 'Current password required' });
+
+  const creds = await getAdminCreds();
+  const valid = creds.passwordHash
+    ? await bcrypt.compare(currentPassword, creds.passwordHash)
+    : currentPassword === creds.plainFallback;
+
+  if (!valid) return res.status(401).json({ error: 'Current password is incorrect' });
+
+  if (newEmail && newEmail.includes('@')) {
+    await prisma.setting.upsert({ where: { key: 'admin_email' }, update: { value: newEmail }, create: { key: 'admin_email', value: newEmail } });
+  }
+  if (newPassword && newPassword.length >= 6) {
+    const hash = await bcrypt.hash(newPassword, 10);
+    await prisma.setting.upsert({ where: { key: 'admin_password_hash' }, update: { value: hash }, create: { key: 'admin_password_hash', value: hash } });
+  }
+
+  res.json({ success: true, message: 'Credentials updated successfully' });
 });
 
 // ── Admin token verify ─────────────────────────────────────────────────────────
