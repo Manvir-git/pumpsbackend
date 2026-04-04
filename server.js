@@ -179,6 +179,27 @@ app.put('/admin/credentials', verifyToken, async (req, res) => {
   res.json({ success: true, message: 'Credentials updated successfully' });
 });
 
+// ── Get current admin email (no password exposed) ─────────────────────────────
+app.get('/admin/credentials', verifyToken, async (req, res) => {
+  const creds = await getAdminCreds();
+  res.json({ email: creds.email, hasCustomPassword: !!creds.passwordHash });
+});
+
+// ── Forgot password recovery (uses RECOVERY_KEY env var) ──────────────────────
+app.post('/admin/recover', async (req, res) => {
+  const { recoveryKey, newPassword } = req.body;
+  const RECOVERY_KEY = process.env.RECOVERY_KEY;
+
+  if (!RECOVERY_KEY) return res.status(400).json({ error: 'RECOVERY_KEY not set in environment. Add it on Render.' });
+  if (recoveryKey !== RECOVERY_KEY) return res.status(401).json({ error: 'Invalid recovery key' });
+  if (!newPassword || newPassword.length < 6) return res.status(400).json({ error: 'Password must be at least 6 characters' });
+
+  const hash = await bcrypt.hash(newPassword, 10);
+  await prisma.setting.upsert({ where: { key: 'admin_password_hash' }, update: { value: hash }, create: { key: 'admin_password_hash', value: hash } });
+
+  res.json({ success: true, message: 'Password reset successfully. You can now log in with your new password.' });
+});
+
 // ── Admin token verify ─────────────────────────────────────────────────────────
 app.get('/admin/verify', verifyToken, (req, res) => {
   res.json({ message: 'Token is valid', user: req.user });
