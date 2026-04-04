@@ -149,7 +149,7 @@ router.post('/', upload.array('images', 5), async (req, res) => {
 // ── PUT /api/products/:id ──────────────────────────────────────────────────────
 router.put('/:id', upload.array('images', 5), async (req, res) => {
   try {
-    const { name, brand, categoryId, specs, price, variants, features, description, sortOrder, isActive, replaceImages } = req.body;
+    const { name, brand, categoryId, specs, price, variants, features, description, sortOrder, isActive, replaceImages, removedImages } = req.body;
 
     const existing = await prisma.product.findUnique({ where: { id: req.params.id } });
     if (!existing) return res.status(404).json({ error: 'Product not found' });
@@ -167,9 +167,24 @@ router.put('/:id', upload.array('images', 5), async (req, res) => {
     if (variants != null) data.variants = safeParse(variants, existing.variants);
     if (features != null) data.features = safeParse(features, existing.features);
 
+    // Handle removed images — delete from Cloudinary + filter from array
+    const toRemove = removedImages ? safeParse(removedImages, []) : [];
+    let currentImages = existing.images || [];
+    if (toRemove.length > 0) {
+      currentImages = currentImages.filter(url => !toRemove.includes(url));
+      // Delete from Cloudinary (best-effort, don't fail the request if this errors)
+      await Promise.allSettled(toRemove.map(url => {
+        const match = url.match(/\/ltc-products\/([^.]+)/);
+        if (!match) return Promise.resolve();
+        return cloudinary.uploader.destroy(`ltc-products/${match[1]}`);
+      }));
+    }
+
     if (req.files && req.files.length > 0) {
       const newImages = await Promise.all(req.files.map(f => uploadToCloudinary(f.buffer)));
-      data.images = replaceImages === 'true' ? newImages : [...(existing.images || []), ...newImages];
+      data.images = replaceImages === 'true' ? newImages : [...currentImages, ...newImages];
+    } else if (toRemove.length > 0) {
+      data.images = currentImages;
     }
 
     const product = await prisma.product.update({
